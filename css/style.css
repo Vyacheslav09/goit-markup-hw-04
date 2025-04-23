@@ -117,6 +117,11 @@ h3 {
 .section-first {
     background-color: #2E2F42;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)),
+      url(/images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .first-title {
@@ -147,6 +152,7 @@ h3 {
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .button-service:hover {
     background-color: #404BBF;
@@ -175,6 +181,22 @@ h3 {
     display: flex;
     gap: 24px;
     align-items: center;
+}
+.container-icon{
+    display: flex;
+    border: solid 1px #8E8F99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.business-icon-link {
+
+
 }
 .business-table-list {
     width: calc((100% - 72px) / 4);
@@ -257,6 +279,34 @@ h3 {
 .portfolio-table-list {
     width: calc((100% - 48px) / 3);
 }
+.portfolio-container-overlay {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-table-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+    background-color: #4D5AE5;
+}
+
+.portfolio-container-overlay:hover .portfolio-table-overlay {
+    transform: translateY(0);
+}
+
+.portfolio-overlay-text{
+    padding: 40px 32px 164px 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}
+
 .container-portfolio-name {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
